@@ -8,7 +8,7 @@ Console.WriteLine("=== NGÀY 1: VARIABLES & DATA TYPES ===\n");
 
 // ============================================
 // 1️⃣ KIỂU SỐ NGUYÊN (Integer Types)
-// ============================================
+// ============================================ 
 Console.WriteLine("--- 1. Kiểu số nguyên ---");
 
 int tuoi = 21;                    // Phổ biến nhất, -2.1 tỷ đến 2.1 tỷ
@@ -88,27 +88,16 @@ int namSinh = int.Parse(input ?? "2000");
 int tuoiHienTai = 2026 - namSinh;
 Console.WriteLine($"Năm nay bạn {tuoiHienTai} tuổi!");
 
-// ============================================
-// 📝 GHI CHÚ CHO NAPKIN
-// ============================================
-/*
-Ghi vào Napkin hôm nay:
+Console.WriteLine("\n--- Bài 2: Lời chào ---");
+Console.Write("Nhập tên của bạn: ");
+string name = Console.ReadLine();
+Console.Write("Nhập tuổi của bạn: ");
+int age = int.Parse(Console.ReadLine());
+Console.WriteLine($"Xin chào {name}, bạn {age} tuổi");
 
-1. KHÁI NIỆM: Variable là ô nhớ lưu trữ dữ liệu, mỗi loại có kích thước khác nhau
-
-2. SYNTAX:
-   - int x = 10;
-   - string s = "hello";
-   - var tự suy luận kiểu
-
-3. KHI NÀO DÙNG:
-   - int: đếm, index, tuổi
-   - decimal: tiền bạc (không dùng float/double)
-   - string: văn bản
-   - bool: điều kiện true/false
-
-4. LỖI HAY GẶP:
-   - Quên 'f' sau float: float x = 3.14f;
-   - Quên 'm' sau decimal: decimal x = 100m;
-   - Dùng nháy kép cho char: char c = "A" (sai) → char c = 'A' (đúng)
-*/
+Console.WriteLine("\n--- Bài 3: Tính tổng tiền ---");
+Console.Write("Nhập đơn giá: ");
+decimal donGia = decimal.Parse(Console.ReadLine());
+Console.Write("Nhập số lượng: ");
+int soLuong = int.Parse(Console.ReadLine());
+Console.WriteLine($"Tổng tiền: {donGia * soLuong}");
